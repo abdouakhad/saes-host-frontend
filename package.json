@@ -1,11 +1,10 @@
 {
-  "homepage": "https://abdouakhad.github.io",
+  "homepage": "https://abdouakhad.github.io/saes-host-frontend",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.2.0",
-    "gh-pages": "^3.2.3",
     "@headlessui/react": "^1.4.0",
     "@heroicons/react": "^1.0.4",
     "@tailwindcss/aspect-ratio": "^0.2.1",
