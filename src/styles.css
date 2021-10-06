@@ -1,0 +1,183 @@
+@import "react-alice-carousel/lib/alice-carousel.css";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+body{
+    font-family: 'Lato', sans-serif;
+}
+.alice-carousel__dots-item:not(.__custom):hover{
+    background-color: #FFD230!important;
+    opacity: .9;
+}
+
+.alice-carousel__dots-item:not(.__custom).__active {
+    background-color: #FFD230!important;
+   
+}
+
+
+.alice-carousel__dots-item:not(.__custom) {
+    width: 8px;
+    height: 8px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #fff!important;
+}
+
+.alice-carousel__prev-btn-item, .alice-carousel__next-btn-item {
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px;
+    margin: 0;
+    color: #FFD230!important;
+}
+
+
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+body .containers {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+/* max-width: 1200px; */
+margin: 40px 0;
+}
+
+body .containers .card {
+position: relative;
+min-width: 280px;
+height: 260px;
+box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+  inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+  5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+border-radius: 15px;
+margin: 30px;
+transition: 0.5s;
+}
+
+
+body .containers .card .box {
+position: absolute;
+top: 20px;
+left: 20px;
+right: 20px;
+bottom: 20px;
+background: #000;
+border-radius: 15px;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+transition: 0.5s;
+}
+
+body .containers .card .box:hover {
+transform: translateY(-50px);
+}
+
+body .containers .card .box:before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 50%;
+height: 100%;
+background: rgba(255, 255, 255, 0.03);
+}
+
+/*body .containers .card .box .content {
+padding: 20px;
+text-align: center;
+}
+*/
+
+ body .containers .card .box .content h2, .contetnt2 {
+position: absolute;
+top: 50px;
+right: 30px;
+font-size: 8rem;
+color: rgba(255, 210, 48, 0.2);
+}
+
+
+body .containers .card .box .content h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    color: #fff;
+    z-index: 1;
+    transition: 0.5s;
+    margin-bottom: 0px;
+}
+/*
+body .containers .card .box .content img {
+
+transition: 0.5s;
+}
+
+*/
+
+/* Styling the saes */
+
+/* .main-bg{
+    background-image: url(../src/img/work-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* box-shadow:20px 20px 50px 15px #000;   
+    
+} 
+*/
+.bg{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.main-bg {
+    background: url(../src/img/work-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+  
+.main-bg::after{
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: #000;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 0;   
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.main-section{
+    position: relative;
+    z-index: 2;
+}
+
+.img-section{
+    background: url(../src/img/bg-web.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.infoImg{
+    background: url(../src/img/bg-info.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media (max-width: 500px) {
+    .img-code {
+        position: absolute;
+        right: 50px;
+    }
+}
+@media (max-width: 330px) {
+    .img-code {
+        visibility: hidden;
+    }
+}
